@@ -5,7 +5,7 @@ As developers encountered challenges with traditional DOM manipulation, various 
 
 ---
 
-Subsequently, Vue.js and React introduced a new syntax for front-end development. Behind the scenes, the React compiler transforms your code into HTML, CSS, and JavaScript, streamlining the development of large-scale applications.
+>Subsequently, Vue.js and React introduced a new syntax for front-end development. Behind the scenes, the React compiler transforms your code into HTML, CSS, and JavaScript, streamlining the development of large-scale applications.
 
 ---
 
@@ -33,7 +33,7 @@ In React, there is a virtual DOM and a real DOM.
 
 ---
 
-In summary, while there are two representations—virtual DOM and real DOM—React abstracts the complexity of direct manipulation of the real DOM by using a virtual DOM and efficiently updating only the parts that have changed. This approach contributes to React's efficiency and performance in managing UI updates.
+>In summary, while there are two representations—virtual DOM and real DOM—React abstracts the complexity of direct manipulation of the real DOM by using a virtual DOM and efficiently updating only the parts that have changed. This approach contributes to React's efficiency and performance in managing UI updates.
 
 ---
 
@@ -61,7 +61,7 @@ So, if your pet was happily dancing, clicking the button might make it change to
 
 ---
 
-In React, when the state changes, React automatically re-renders the component to reflect that change. This way, your users always see the most up-to-date and accurate information on the screen.
+>In React, when the state changes, React automatically re-renders the component to reflect that change. This way, your users always see the most up-to-date and accurate information on the screen.
 
 ---
 
@@ -159,7 +159,7 @@ The component returns JSX, representing the UI.
 
 ---
 
-Now, when you click the "Increment" or "Decrement" button, the count state changes, triggering a re-render of the component. The UI is updated to reflect the new count value. This is the essence of re-rendering based on state changes in a React component.
+>Now, when you click the "Increment" or "Decrement" button, the count state changes, triggering a re-render of the component. The UI is updated to reflect the new count value. This is the essence of re-rendering based on state changes in a React component.
 
 ---
 

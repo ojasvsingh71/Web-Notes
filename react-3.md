@@ -51,7 +51,7 @@ In this example:
 
 ---
 
-The above example helps us understand how useState helps manage and update state in functional components, providing a straightforward way to incorporate stateful behavior into React applications.
+>The above example helps us understand how useState helps manage and update state in functional components, providing a straightforward way to incorporate stateful behavior into React applications.
 
 ---
 
@@ -111,7 +111,7 @@ In this example:
 
 ---
 
-useEffect is a powerful tool for managing side effects in React components, providing a clean way to handle asynchronous operations and component lifecycle events.
+>useEffect is a powerful tool for managing side effects in React components, providing a clean way to handle asynchronous operations and component lifecycle events.
 
 ---
 
@@ -166,7 +166,7 @@ In this example:
  
 ---
 
-useMemo is particularly useful when dealing with expensive calculations or when you want to optimize performance by avoiding unnecessary computations during renders. It's important to use it judiciously, as overusing memoization can lead to increased complexity.
+>useMemo is particularly useful when dealing with expensive calculations or when you want to optimize performance by avoiding unnecessary computations during renders. It's important to use it judiciously, as overusing memoization can lead to increased complexity.
 
 ---
 
@@ -218,7 +218,7 @@ In this example:
 
 ---
 
-Using useCallback becomes more crucial when dealing with complex components or components with frequent re-renders, optimizing performance by avoiding unnecessary function creations.
+>Using useCallback becomes more crucial when dealing with complex components or components with frequent re-renders, optimizing performance by avoiding unnecessary function creations.
 
 ---
 
@@ -259,7 +259,7 @@ const memoizedCallback = useCallback(() => {
 ```
 ---
 
-In summary, useEffect is for handling side effects, useMemo is for memoizing values, and useCallback is for memoizing callback functions. Each serves a different purpose in optimizing and managing the behavior of React components.
+>In summary, useEffect is for handling side effects, useMemo is for memoizing values, and useCallback is for memoizing callback functions. Each serves a different purpose in optimizing and managing the behavior of React components.
 
 ---
 
@@ -320,6 +320,6 @@ export default App;
 
 ---
 
-In summary, the ability to return a cleanup function from useEffect is crucial for managing resources, subscriptions, or intervals created during the component's lifecycle. It helps ensure proper cleanup when the component is no longer in use, preventing memory leaks or unintended behavior.
+>In summary, the ability to return a cleanup function from useEffect is crucial for managing resources, subscriptions, or intervals created during the component's lifecycle. It helps ensure proper cleanup when the component is no longer in use, preventing memory leaks or unintended behavior.
 
 ---

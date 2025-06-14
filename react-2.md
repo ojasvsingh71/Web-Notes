@@ -20,7 +20,7 @@ In addition to reconciliation, it aids in maintaining a straightforward and pred
 
 ---
 
-While a single root element is required, React provides a feature called fragments (<></> or <React.Fragment></React.Fragment>) that allows you to group multiple elements without introducing an extra node in the real DOM. Fragments don't create an additional parent in the DOM but still satisfy the single-root rule.
+>While a single root element is required, React provides a feature called fragments (<></> or <React.Fragment></React.Fragment>) that allows you to group multiple elements without introducing an extra node in the real DOM. Fragments don't create an additional parent in the DOM but still satisfy the single-root rule.
 
 ---
 
@@ -41,7 +41,7 @@ const MyComponent = () => {
 ```
 ---
 
-In summary, the single-root rule ensures a clear and efficient rendering process, simplifies styling and layout, and maintains consistency in React components.
+>In summary, the single-root rule ensures a clear and efficient rendering process, simplifies styling and layout, and maintains consistency in React components.
 
 ---
 
@@ -100,7 +100,7 @@ console.log(age);   // Output: 21
 
 ---
 
-Object destructuring provides a concise and expressive way to extract values from objects, making your code more readable and maintainable.
+>Object destructuring provides a concise and expressive way to extract values from objects, making your code more readable and maintainable.
 
 ---
 
@@ -111,7 +111,7 @@ Rerendering in React refers to the process of updating and rendering components 
 
 ---
 
-Basically, anytime a final DOM manipulation happens or when react actually updates the DOM it is called a rerender.
+>Basically, anytime a final DOM manipulation happens or when react actually updates the DOM it is called a rerender.
 
 ---
 
@@ -147,7 +147,7 @@ When state is kept at a higher level in the component tree, any changes to that 
 
 ---
 
-For example, if a specific piece of state is only relevant to a small portion of your application, keeping that state localized to the components in that section prevents unnecessary re-renders elsewhere. This practice contributes to a more efficient and performant React application.
+>For example, if a specific piece of state is only relevant to a small portion of your application, keeping that state localized to the components in that section prevents unnecessary re-renders elsewhere. This practice contributes to a more efficient and performant React application.
 
 ---
 
@@ -161,7 +161,7 @@ In the context of minimizing re-renders, useMemo is often employed to memoize th
 
 ---
 
-By using useMemo, you can strategically memoize computations to optimize performance and minimize the impact of re-renders in React.
+>By using useMemo, you can strategically memoize computations to optimize performance and minimize the impact of re-renders in React.
 
 ---
 
@@ -211,7 +211,7 @@ export default App;
 
 ---
 
-In this example, each todo item in the list has a unique id that serves as the key prop. When a new todo is added, the key helps React efficiently update and re-render only the necessary parts of the list, maintaining performance and ensuring a smooth user experience.
+>In this example, each todo item in the list has a unique id that serves as the key prop. When a new todo is added, the key helps React efficiently update and re-render only the necessary parts of the list, maintaining performance and ensuring a smooth user experience.
 
 ---
 
@@ -259,7 +259,7 @@ export default BlogPost;
 
 ---
 
-With this structure, we maintain a consistent card styling across different sections of our application, promoting reusability and making it easy to manage the overall theme. This approach is especially beneficial when you want to keep a uniform appearance for similar components while varying their internal content.
+>With this structure, we maintain a consistent card styling across different sections of our application, promoting reusability and making it easy to manage the overall theme. This approach is especially beneficial when you want to keep a uniform appearance for similar components while varying their internal content.
 
 ---
 
@@ -332,7 +332,7 @@ React Hooks are functions that allow functional components in React to have stat
 
 ---
 
-Using these hooks, developers can manage state, handle side effects, optimize performance, and create more reusable and readable functional components in React applications. Each hook serves a specific purpose, contributing to a more modular and maintainable codebase.
+>Using these hooks, developers can manage state, handle side effects, optimize performance, and create more reusable and readable functional components in React applications. Each hook serves a specific purpose, contributing to a more modular and maintainable codebase.
 
 ---
 
@@ -396,7 +396,7 @@ In this example:
 
 ---
 
-useEffect is a powerful tool for managing side effects in React components, providing a clean way to handle asynchronous operations and component lifecycle events.
+>useEffect is a powerful tool for managing side effects in React components, providing a clean way to handle asynchronous operations and component lifecycle events.
 
 ---
  
