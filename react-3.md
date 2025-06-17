@@ -1,10 +1,10 @@
-# Side Effects in React
+# ⚠️ Side Effects in React
 
 In the context of React, side effects refer to operations or behaviors that occur outside the scope of the typical component rendering process. These can include data fetching, subscriptions, manual DOM manipulations, and other actions that have an impact beyond rendering the user interface.
  
 Thus, "side effects" are the operations outside the usual rendering process, and "hooks," like useEffect, are mechanisms provided by React to handle these side effects in functional components. The useEffect hook allows you to incorporate side effects into your components in a clean and organized manner.
 
-## React Hooks
+## ⚛️ React Hooks
 
 React Hooks are functions that allow functional components in React to have state and lifecycle features that were previously available only in class components. Hooks were introduced in React 16.8 to enable developers to use state and other React features without writing a class.
  
@@ -12,7 +12,7 @@ Using these hooks, developers can manage state, handle side effects, optimize pe
  
 Some commonly used React Hooks are:
 
-### 1. useState()
+### 1. 📊 useState()
 
 useState is a React Hook that enables functional components to manage state. It returns an array with two elements: the current state value and a function to update that value.
 
@@ -51,11 +51,11 @@ In this example:
 
 ---
 
->The above example helps us understand how useState helps manage and update state in functional components, providing a straightforward way to incorporate stateful behavior into React applications.
+>💡The above example helps us understand how useState helps manage and update state in functional components, providing a straightforward way to incorporate stateful behavior into React applications.
 
 ---
 
-### 2. useEffect()
+### 2. 🔄 useEffect()
 
 useEffect is a React Hook used for performing side effects in functional components. It is often used for tasks such as data fetching, subscriptions, or manually changing the DOM. The useEffect hook accepts two arguments: a function that contains the code to execute, and an optional array of dependencies that determines when the effect should run.
  
@@ -111,11 +111,11 @@ In this example:
 
 ---
 
->useEffect is a powerful tool for managing side effects in React components, providing a clean way to handle asynchronous operations and component lifecycle events.
+>⚡useEffect is a powerful tool for managing side effects in React components, providing a clean way to handle asynchronous operations and component lifecycle events.
 
 ---
 
-### 3. useMemo()
+### 3. 💾  useMemo()
 
 useMemo is a React Hook that is used to memoize the result of a computation, preventing unnecessary recalculations when the component re-renders. It takes a function (referred to as the "memoized function") and an array of dependencies. The memoized function will only be recomputed when the values in the dependencies array change.
  
@@ -166,11 +166,11 @@ In this example:
  
 ---
 
->useMemo is particularly useful when dealing with expensive calculations or when you want to optimize performance by avoiding unnecessary computations during renders. It's important to use it judiciously, as overusing memoization can lead to increased complexity.
+>💾useMemo is particularly useful when dealing with expensive calculations or when you want to optimize performance by avoiding unnecessary computations during renders. It's important to use it judiciously, as overusing memoization can lead to increased complexity.
 
 ---
 
-### 4. useCallback()
+### 4. 📞 useCallback()
 
 useCallback is a React Hook that is used to memoize a callback function, preventing unnecessary re-creation of the callback on each render. This can be useful when passing callbacks to child components to ensure they don't trigger unnecessary renders.
  
@@ -218,13 +218,13 @@ In this example:
 
 ---
 
->Using useCallback becomes more crucial when dealing with complex components or components with frequent re-renders, optimizing performance by avoiding unnecessary function creations.
+>⚡ Using useCallback becomes more crucial when dealing with complex components or components with frequent re-renders, optimizing performance by avoiding unnecessary function creations.
 
 ---
 
-## Difference between useEffect, useMemo & useCallback
+## 🤔 Difference between useEffect, useMemo & useCallback
 
-1. useEffect:
+1. 🔄 useEffect:
 - Purpose: Manages side effects in function components.
 - Triggers: Runs after rendering and on subsequent re-renders.
 - Use Cases: Fetching data, subscriptions, manually changing the - DOM, etc.
@@ -238,7 +238,7 @@ useEffect(() => {
   };
 }, [dependencies]);
 ```
-2. useMemo:
+2. 💾 useMemo:
 - Purpose: Memoizes the result of a computation to avoid unnecessary recalculations.
 - Triggers: Runs during rendering.
 - Use Cases: Memoizing expensive calculations, preventing unnecessary re-renders.
@@ -246,7 +246,7 @@ useEffect(() => {
 
 `const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);`
 
-3. useCallback:
+3. 📞 useCallback:
 - Purpose: Memoizes a callback function to prevent unnecessary re-renders of child components.
 - Triggers: Runs during rendering.
 - Use Cases: Preventing unnecessary re-renders when passing callbacks to child components.
@@ -259,11 +259,11 @@ const memoizedCallback = useCallback(() => {
 ```
 ---
 
->In summary, useEffect is for handling side effects, useMemo is for memoizing values, and useCallback is for memoizing callback functions. Each serves a different purpose in optimizing and managing the behavior of React components.
+>📚In summary, useEffect is for handling side effects, useMemo is for memoizing values, and useCallback is for memoizing callback functions. Each serves a different purpose in optimizing and managing the behavior of React components.
 
 ---
 
-## Significance of Returning a Component from useEffect
+## ⏮️ Significance of Returning a Component from useEffect
 
 In the provided code snippet, the we utilize the useEffect hook along with the setInterval function to toggle the state of the render variable every 5 seconds. This, in turn, controls the rendering of the MyComponent or an empty div based on the value of render. Let's break down the significance of returning a component from useEffect:
 
@@ -311,7 +311,7 @@ function MyComponent() {
 export default App;
 ```
 
-### Understanding the Code
+### 🔍 Understanding the Code
 
 - The useEffect hook is used to create a side effect (in this case, toggling the render state at intervals) when the component mounts.
 - A cleanup function is returned within the useEffect, which will be executed when the component is unmounted. In this example, it clears the interval previously set by setInterval.
@@ -320,6 +320,6 @@ export default App;
 
 ---
 
->In summary, the ability to return a cleanup function from useEffect is crucial for managing resources, subscriptions, or intervals created during the component's lifecycle. It helps ensure proper cleanup when the component is no longer in use, preventing memory leaks or unintended behavior.
+>🧹In summary, the ability to return a cleanup function from useEffect is crucial for managing resources, subscriptions, or intervals created during the component's lifecycle. It helps ensure proper cleanup when the component is no longer in use, preventing memory leaks or unintended behavior.
 
 ---

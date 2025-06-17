@@ -1,6 +1,6 @@
 ![routing](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fdd624914-6876-4b58-9694-424f7aa5e22a%2Ff1a0e3cf-467f-486b-8285-30e513f1d01a%2FUntitled.png?table=block&id=533862b2-ceec-4ccd-8733-67ab95bf4a18&cache=v2)
 
-# React Routing
+# 🗺️ React Routing
 
 Routing in React is a mechanism that allows you to manage navigation and control the content displayed in your application based on the URL. It's essential for several reasons:
  
@@ -13,13 +13,13 @@ Routing in React is a mechanism that allows you to manage navigation and control
 
 ---
 
->To implement routing in a React application, developers often use libraries like React Router. React Router provides a set of components and functions to define routes, handle navigation, and manage the application's history, making it an essential tool for building robust and navigable React applications.
+>🌐To implement routing in a React application, developers often use libraries like React Router. React Router provides a set of components and functions to define routes, handle navigation, and manage the application's history, making it an essential tool for building robust and navigable React applications.
 
 ---
 
-## Some Jargons
+## 🧩 🔤 Some Jargons
 
-### SPA (Single Page Application):
+### 🖥️ SPA (Single Page Application):
 
 A Single Page Application (SPA) is a type of web application or website that interacts with the user by dynamically rewriting the current page, rather than loading entire new pages from the server.
  
@@ -29,7 +29,7 @@ Key Characteristics:
 - Utilizes AJAX or Fetch API to communicate with the server and fetch data without reloading the entire page.
 - Provides a more fluid and seamless user experience by avoiding full-page reloads.
 
-### Client-side Bundle:
+### 📦 Client-side Bundle:
 In the context of web development, a client-side bundle refers to a collection of JavaScript files and other assets bundled together to be delivered to the client's web browser.
  
 Key Components:
@@ -41,7 +41,7 @@ Advantages:
 - Enables code splitting and lazy loading for optimizing performance.
 - Simplifies deployment and maintenance by organizing code into manageable bundles.
  
-### Client-side Routing:
+### 🧭 Client-side Routing:
 
 Client-side routing refers to the process of managing navigation within a Single Page Application (SPA) entirely on the client side, without making additional requests to the server for each new view.
  
@@ -55,11 +55,11 @@ Advantages:
 - Allows for a smoother and more responsive user interface as content is updated dynamically.
 - Enables bookmarking, sharing, and direct linking to specific views within the SPA.
 
-## React Router DOM
+## 🌐 React Router DOM
 
 In React, routing is commonly achieved using the React Router DOM library, which provides a set of components for handling navigation within a React application. The main components involved in React Router DOM are BrowserRouter, Routes, and Route. Here's an overview of how routing is typically implemented using these components:
 
-## BrowserRouter:
+## 🌐 BrowserRouter:
 
 - The BrowserRouter component is a top-level component that should be used to wrap your entire application. It enables the use of routing features throughout your React application.
 - It utilizes the HTML5 History API to manipulate the URL without triggering full page reloads.
@@ -76,7 +76,7 @@ function App() {
 }
 ```
 
-## Routes:
+## 🛣️ Routes:
 
 - The Routes component is used to define the routes for your application. Inside the Routes component, you specify individual Route components for each route in your application.
 - The Routes component can contain multiple Route components, each representing a different view or page.
@@ -95,7 +95,7 @@ function App() {
 }
 ```
 
-## Route:
+## 🧭 Route:
 
 - The Route component is responsible for rendering specific components based on the current URL path. It takes two main props: path and element.
 - The path prop defines the URL path that should match for the route to be rendered, and the element prop specifies the component to render when the path matches.
@@ -120,11 +120,11 @@ In the above example, when the URL path is "/", the Home component will be rende
 
 ---
 
->This is a basic setup for using React Router DOM. You can extend this by adding nested routes, handling dynamic route parameters, and incorporating additional features provided by React Router DOM for more advanced routing scenarios.
+>🧩This is a basic setup for using React Router DOM. You can extend this by adding nested routes, handling dynamic route parameters, and incorporating additional features provided by React Router DOM for more advanced routing scenarios.
 
 ---
 
-# Using React Router DOM
+# 🛠️ Using React Router DOM
 
 In a React app, creating a basic landing page and dashboard page with routing involves using React Router DOM to manage navigation. Here's a simple example:
  
@@ -235,11 +235,11 @@ Import and use SharedComponent in both Landing and Dashboard.
 
 ---
 
->Via this example, we learn about a basic structure for setting up routing in a React app. React Router's declarative approach makes it easy to manage navigation and share UI components between different pages.
+>🧱Via this example, we learn about a basic structure for setting up routing in a React app. React Router's declarative approach makes it easy to manage navigation and share UI components between different pages.
 
 ---
 
-# Issue with window.location.href
+# ⚠️ Issue with window.location.href
 
 When using window.location.href for navigation in a React application, it triggers a full page reload, which is not desirable in client-side routing. A full page reload involves fetching the HTML, CSS, and other assets again, leading to a slower and less efficient user experience.
  
@@ -289,23 +289,23 @@ export default App;
 
 ---
 
->In this example, the useNavigate hook is used to get the navigate function, which can be called to navigate to different routes without causing a full page reload. By using this approach, you maintain the benefits of client-side routing in React, ensuring a faster and more seamless user experience.
+>🚀In this example, the useNavigate hook is used to get the navigate function, which can be called to navigate to different routes without causing a full page reload. By using this approach, you maintain the benefits of client-side routing in React, ensuring a faster and more seamless user experience.
 
 ---
 
-## Note
+## 📌 Note
 The useNavigate hook in React Router DOM is designed to work within the context of a BrowserRouter. It should be used inside a component that is a descendant of BrowserRouter to ensure access to the correct router context. This limitation is intentional, as useNavigate relies on the router context for scoped navigation, enabling seamless client-side routing without triggering a full page reload. Placing the hook within the correct context ensures its proper functionality for dynamic view and URL updates.
 
-## Lazy Loading
+## 🐢 Lazy Loading
 Lazy loading in React is a technique used to optimize the performance of a web application by deferring the loading of certain components until they are actually needed. This can significantly reduce the initial bundle size and improve the overall loading time of the application.
  
 In React, lazy loading is typically achieved using the React.lazy function along with the Suspense component. The React.lazy function allows you to load a component lazily, meaning it is only fetched when the component is actually rendered. Here's a simple example:
 
-## React Suspense
+## ⏳ React Suspense
 In React, Suspense is a component that enables a better experience for handling asynchronous operations such as code-splitting and lazy loading. It's used in conjunction with React.lazy for lazy loading components or with data fetching functions.
 When you're using React.lazy to load a component lazily, you wrap it with Suspense to specify a fallback UI that will be rendered while the component is being loaded. The fallback prop of Suspense defines what to display during the loading period.
 
-## Code Implementation
+## 🧩 Code Implementation
 
 ```
 import React, { Suspense } from 'react';
@@ -327,21 +327,21 @@ In this example, if MyLazyComponent is not yet loaded, the Suspense component wi
  
 ---
 
->This mechanism is particularly useful for improving the user experience when dealing with dynamic loading of components or fetching data asynchronously. The fallback UI gives users feedback that something is happening in the background, making the application feel more responsive.
+>⏱️This mechanism is particularly useful for improving the user experience when dealing with dynamic loading of components or fetching data asynchronously. The fallback UI gives users feedback that something is happening in the background, making the application feel more responsive.
 
 ---
 
-## Prop Drilling in React
+## 📤 Prop Drilling in React
 Prop drilling refers to the process of passing data from a top-level component down to deeper levels through intermediate components. It happens when a piece of state needs to be accessible by a component deep in the component tree, and it gets passed down as a prop through all the intermediate components.
  
-## Why Prop Drilling?
+## ❓ Why Prop Drilling?
 1. State Management:
 Prop drilling is often used to manage state in a React application. By passing state down through the component tree, you can share data between components without resorting to more advanced state management solutions like context or state management libraries.
 
 2. Simplicity:
 Prop drilling keeps the application structure simple and makes it easier to understand the flow of data. It's a straightforward way of handling data without introducing more complex tools.
 
-### Code Implementation
+### 🧩 Code Implementation
 
 ```
 // Top-level component
@@ -364,7 +364,7 @@ function GrandchildComponent({ data }) {
 
 In this example, App has a piece of data that needs to be accessed by GrandchildComponent. Instead of using more advanced state management tools, we pass the data as a prop through ChildComponent. This is prop drilling in action.
 
-## Drawbacks
+## ⚠️ Drawbacks
 
 1. Readability:
 Prop drilling can make the code less readable, especially when you have many levels of components. It might be hard to trace where a particular prop is coming from.
@@ -374,14 +374,14 @@ If the structure of the component tree changes, and the prop needs to be passed 
 
 ---
 
->While prop drilling is a simple and effective way to manage state in some cases, for larger applications or more complex state management, consider using tools like React Context or state management libraries. These can help avoid the drawbacks of prop drilling while providing a cleaner solution for state sharing.
+>🧩While prop drilling is a simple and effective way to manage state in some cases, for larger applications or more complex state management, consider using tools like React Context or state management libraries. These can help avoid the drawbacks of prop drilling while providing a cleaner solution for state sharing.
 
 ---
 
-# Context API in React
+# 🧩 Context API in React
 Context API is a feature in React that provides a way to share values like props between components without explicitly passing them through each level of the component tree. It helps solve the prop drilling problem by allowing data to be accessed by components at any level without the need to pass it through intermediate components.
 
-## Key Components of Context API:
+## 🔑 Key Components of Context API:
  
 1. createContext:
 The createContext function is used to create a context. It returns an object with two components - Provider and Consumer.
@@ -410,7 +410,7 @@ or
 
 `const value = useContext(MyContext);`
 
-### Code Implementation
+### 🧩 Code Implementation
 
 ```
 // Create a context
@@ -445,11 +445,11 @@ function Navbar() {
 ```
 ---
 
->In this example, the UserContext.Provider in the App component provides the user object to all its descendants. The Navbar component, which is deeply nested, consumes the user context value without the need for prop drilling.
+>🧩In this example, the UserContext.Provider in the App component provides the user object to all its descendants. The Navbar component, which is deeply nested, consumes the user context value without the need for prop drilling.
 
 ---
  
-## Advantages of Context API:
+## ✅ Advantages of Context API:
 1. Avoids Prop Drilling:
 Context API eliminates the need for passing props through intermediate components, making the code cleaner and more maintainable.
 
@@ -458,14 +458,14 @@ It allows you to manage global state that can be accessed by components across t
  
 ---
 
->While Context API is a powerful tool, it's essential to use it judiciously and consider factors like the size and complexity of the application. For complex state management needs, additional tools like Redux might be more suitable.
+>🧠While Context API is a powerful tool, it's essential to use it judiciously and consider factors like the size and complexity of the application. For complex state management needs, additional tools like Redux might be more suitable.
 
 ---
  
-## Other Solutions
+## 🧩 Other Solutions
 Recoil, Redux, and Context API are all solutions for managing state in React applications, each offering different features and trade-offs.
 
-### 1. Context API
+### 🧩 1. Context API
 - Role: Context API is a feature provided by React that allows components to share state without prop drilling. It creates a context and a provider to wrap components that need access to that context.
 - Usage:
 
@@ -491,7 +491,7 @@ function Profile() {
 ```
 - Advantages: Simplicity, built-in React feature.
  
-### 2. Recoil
+### 2. ⚛️ Recoil
 
 - Role: Recoil is a state management library developed by Facebook for React applications. It introduces the concept of atoms and selectors to manage state globally. It can be considered a more advanced and feature-rich alternative to Context API.
 - Usage:
@@ -520,7 +520,7 @@ function Profile() {
 
 - Advantages: Advanced features like selectors, better performance optimizations.
  
-### 3. Redux:
+### 3. 🟥 Redux:
 - Role: Redux is a powerful state management library often used with React. It introduces a global store and follows a unidirectional data flow. While Redux provides more features than Context API, it comes with additional concepts and boilerplate.
 - Usage:
 
@@ -557,12 +557,12 @@ function Profile() {
 
 - Advantages: Middleware support, time-travel debugging, broader ecosystem.
  
-## Considerations:
+## 🧭 Considerations:
 - Complexity: Context API is simple and built into React, making it a good choice for simpler state management. Recoil provides more features and optimizations, while Redux is powerful but comes with additional complexity.
 - Scalability: Recoil and Redux are often preferred for larger applications due to their ability to manage complex state logic.
 - Community Support: Redux has a large and established community with a wide range of middleware and tools. Recoil is newer but gaining popularity, while Context API is part of the React core.
 
-## Choosing Between Them:
+## 🤔 Choosing Between Them:
 - Use Context API for Simplicity: For simpler state management needs, especially in smaller applications or when simplicity is a priority.
 - Consider Recoil for Advanced Features: When advanced state management features, like selectors and performance optimizations, are needed.
 - Opt for Redux for Scalability: In larger applications where scalability, middleware, and a broader ecosystem are important factors.
