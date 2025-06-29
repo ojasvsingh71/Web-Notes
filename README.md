@@ -1,13 +1,13 @@
-# 📘 React Notes
+# 📘 Notes
 
-A personal collection of React notes, examples, and snippets covering core concepts, advanced patterns, and best practices.
+A personal collection of notes, examples, and snippets covering core concepts, advanced patterns, and best practices.
 
 ## 📝 Usage
 
 You can:
 - Read through the Markdown notes for learning or revision
 - Copy-paste code examples into your own sandbox projects
-- Use this repo as a quick reference for React basics
+- Use this repo as a quick reference for basics
 
 ## 🧑‍💻 Contribute
 
